@@ -1,0 +1,31 @@
+useEffect()
+-----------
+Side-effects -> React Server
+
+useEffect(() => {
+	// logic
+}, [])
+-> component is fully rendered
+
+const [count, setCount] = useState(0);
+
+useEffect(() => {
+
+}, [count]);
+
+
+useEffect(() => {
+	// logic
+
+	return () => {
+		// logic when the component is destroyed from DOM
+	}
+}, [count]);
+
+npm install axios @types/axios
+
+
+GET -> get data from server -> READ
+POST -> create data at server -> CREATE
+PUT -> update data at server -> UPDATE
+DELETE -> delete data at server -> DELETE
